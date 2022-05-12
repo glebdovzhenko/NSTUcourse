@@ -26,4 +26,5 @@ ys = np.pi * np.sin(xs) / 2.
 
 plt.plot(xs, ys)
 fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(*RadialTransform(np.pi / 2., 0.).transform(xs, ys))
 plt.show()
