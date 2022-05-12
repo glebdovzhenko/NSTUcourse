@@ -9,12 +9,14 @@ import numpy as np
 
 class FFTWorker:
     def __init__(self):
+        # создаём поля: исходные данные
         self.xs = np.array([])
         self.ys = np.array([])
+        self.yerrs = np.array([])
+
         self.ys_filtered = np.array([])
         self.fft_xs = np.array([])
         self.fft_ys = np.array([])
-        self.yerrs = np.array([])
 
         self.max_freq = np.inf
 
